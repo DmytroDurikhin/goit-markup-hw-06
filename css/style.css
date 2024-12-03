@@ -101,6 +101,7 @@ input {
 }
 
 .burger-btn {
+  background: transparent;
 }
 
 .icon-burger {
