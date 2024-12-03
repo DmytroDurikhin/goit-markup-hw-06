@@ -57,12 +57,17 @@
             >
           </ul>
         </address>
+        <button class="burger-btn" type="button"
+          ><svg class="icon-burger" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- #endregion -->
     <!-- #region Hero -->
     <main>
-      <section class="hero">
+      <section class="hero hidden">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button" data-modal-open
@@ -73,7 +78,7 @@
       <!-- #endregion -->
 
       <!-- #region Benefits -->
-      <section class="benefits section">
+      <section class="benefits section hidden">
         <div class="container benefits-container">
           <h2 class="visually-hidden">Benefits</h2>
           <ul class="benefits-list">
@@ -131,7 +136,7 @@
       <!-- #endregion -->
 
       <!-- #region Team -->
-      <section class="team section">
+      <section class="team section hidden">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -355,7 +360,7 @@
       <!-- #endregion -->
 
       <!-- #region Portfolio -->
-      <section class="portfolio section">
+      <section class="portfolio section hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
 
@@ -486,7 +491,7 @@
     </main>
     <!-- #endregion -->
     <!-- #region Footer -->
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container footer-container">
         <div class="footer-logo-wrapper">
           <a class="footer-logo" href="./index.html"
@@ -559,7 +564,7 @@
     <!-- #endregion -->
     <!-- #region Modal -->
 
-    <div class="backdrop is-open" data-modal>
+    <div class="backdrop hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close
           ><svg class="modal-icon-close" width="8" height="8">
