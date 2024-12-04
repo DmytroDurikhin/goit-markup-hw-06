@@ -57,11 +57,90 @@
             >
           </ul>
         </address>
-        <button class="burger-btn" type="button"
+        <button class="burger-btn" type="button" data-menu-open
           ><svg class="icon-burger" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
+      </div>
+      <!-- #region Mobile menu -->
+
+      <div class="mobile-menu" data-menu>
+        <div class="mobile-menu-container container">
+          <button class="mobile-menu-close" type="button" data-menu-close
+            ><svg class="mobile-menu-icon-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item"
+                ><a class="mobile-menu-link current" href="./index.html"
+                  >Studio</a
+                ></li
+              >
+              <li class="mobile-menu-item"
+                ><a class="mobile-menu-link" href="">Portfolio</a></li
+              >
+              <li class="mobile-menu-item"
+                ><a class="mobile-menu-link" href="">Contacts</a></li
+              >
+            </ul>
+          </nav>
+          <address class="mobile-menu-contacts">
+            <ul class="mobile-menu-contacts-list">
+              <li class="mobile-menu-contacts-item"
+                ><a
+                  class="mobile-menu-contacts-link current-tel"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                ></li
+              >
+              <li class="mobile-menu-contacts-item"
+                ><a
+                  class="mobile-menu-contacts-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                ></li
+              >
+            </ul>
+          </address>
+          <ul class="mobile-menu-social-icons">
+            <li class="mobile-menu-social-item"
+              ><a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="mobile-menu-social-link"
+                ><svg class="svg-social-mobile-menu" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg></a
+            ></li>
+            <li class="mobile-menu-social-item"
+              ><a
+                href="https://www.twitter.com/"
+                target="_blank"
+                class="mobile-menu-social-link"
+                ><svg class="svg-social-mobile-menu" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg></a
+            ></li>
+            <li class="mobile-menu-social-item"
+              ><a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="mobile-menu-social-link"
+                ><svg class="svg-social-mobile-menu" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg></a
+            ></li>
+            <li class="mobile-menu-social-item"
+              ><a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="mobile-menu-social-link"
+                ><svg class="svg-social-mobile-menu" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg></a
+            ></li>
+          </ul>
+        </div>
+        <!-- #endregion -->
       </div>
     </header>
     <!-- #endregion -->
@@ -652,5 +731,6 @@
       <!-- #endregion -->
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
