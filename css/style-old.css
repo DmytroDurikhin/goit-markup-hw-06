@@ -13,14 +13,10 @@
   
 }
 .header-nav {
-  display: flex;
-  align-items: center;
 }
 
 .header-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  
 }
 
 .header-link.current {
@@ -47,36 +43,20 @@
 
 .header-logo {
  
-  padding: 24px 0;
+  
   margin-right: 76px;
 }
 
 .header-logo-black {
-  color: #2e2f42;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 
 .header-link {
-  position: relative;
-  color: #2e2f42;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  padding: 24px 0;
-  display: block;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 
 .header-contacts {
-  font-style: normal;
-  margin-left: auto;
+  
 }
 
 .header-contacts-list {
@@ -85,23 +65,18 @@
   gap: 40px;
 }
 .header-contacts-link {
-  color: #434455;
-  display: block;
-  padding: 24px 0;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 
 .header-logo-black:hover,
 .header-logo:focus {
-  color: #4d5ae5;
+  
 }
 .header-link:hover,
 .header-link:focus,
 .header-contacts-link:hover,
 .header-contacts-link:focus {
-  color: #404bbf;
+  
 }
 /* #endregion */
 /* #region Hero */
