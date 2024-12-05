@@ -52,40 +52,17 @@
 /* #endregion */
 /* #region Hero */
 .hero {
-  padding: 188px 0;
-
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero/people-office.jpg);
-  max-width: 1440px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .hero-container {
-  gap: 48px;
 }
 
 .hero-title {
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.07;
-
-  max-width: 496px;
-  margin: 0 auto;
 }
 
 .hero-btn {
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404bbf;
 }
 
 /* #endregion */
@@ -93,31 +70,14 @@
 /* #region Benefits */
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 .benefits-list {
-  display: flex;
-  align-items: center;
   gap: 24px;
 }
 .benefits-subtitle {
-  color: #2e2f42;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.02em;
+
   margin-bottom: 8px;
 }
 .benefits-item {
