@@ -87,58 +87,62 @@
               >
             </ul>
           </nav>
-          <address class="mobile-menu-contacts">
-            <ul class="mobile-menu-contacts-list">
-              <li class="mobile-menu-contacts-item"
+          <div class="mobile-menu-contacts-wrapper">
+            <address class="mobile-menu-contacts">
+              <ul class="mobile-menu-contacts-list">
+                <li class="mobile-menu-contacts-item"
+                  ><a
+                    class="mobile-menu-contacts-link current-tel"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  ></li
+                >
+                <li class="mobile-menu-contacts-item"
+                  ><a
+                    class="mobile-menu-contacts-link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  ></li
+                >
+              </ul>
+            </address>
+            <ul class="mobile-menu-social-icons">
+              <li class="mobile-menu-social-item"
                 ><a
-                  class="mobile-menu-contacts-link current-tel"
-                  href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                ></li
-              >
-              <li class="mobile-menu-contacts-item"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  class="mobile-menu-social-link"
+                  ><svg class="svg-social-mobile-menu" width="24" height="24">
+                    <use
+                      href="./images/icons.svg#icon-instagram"
+                    ></use></svg></a
+              ></li>
+              <li class="mobile-menu-social-item"
                 ><a
-                  class="mobile-menu-contacts-link"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                ></li
-              >
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                  class="mobile-menu-social-link"
+                  ><svg class="svg-social-mobile-menu" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg></a
+              ></li>
+              <li class="mobile-menu-social-item"
+                ><a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  class="mobile-menu-social-link"
+                  ><svg class="svg-social-mobile-menu" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg></a
+              ></li>
+              <li class="mobile-menu-social-item"
+                ><a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  class="mobile-menu-social-link"
+                  ><svg class="svg-social-mobile-menu" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg></a
+              ></li>
             </ul>
-          </address>
-          <ul class="mobile-menu-social-icons">
-            <li class="mobile-menu-social-item"
-              ><a
-                href="https://www.instagram.com/"
-                target="_blank"
-                class="mobile-menu-social-link"
-                ><svg class="svg-social-mobile-menu" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg></a
-            ></li>
-            <li class="mobile-menu-social-item"
-              ><a
-                href="https://www.twitter.com/"
-                target="_blank"
-                class="mobile-menu-social-link"
-                ><svg class="svg-social-mobile-menu" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg></a
-            ></li>
-            <li class="mobile-menu-social-item"
-              ><a
-                href="https://www.facebook.com/"
-                target="_blank"
-                class="mobile-menu-social-link"
-                ><svg class="svg-social-mobile-menu" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg></a
-            ></li>
-            <li class="mobile-menu-social-item"
-              ><a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                class="mobile-menu-social-link"
-                ><svg class="svg-social-mobile-menu" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg></a
-            ></li>
-          </ul>
+          </div>
         </div>
         <!-- #endregion -->
       </div>
@@ -223,7 +227,7 @@
       <!-- #endregion -->
 
       <!-- #region Team -->
-      <section class="team section hidden">
+      <section class="team section">
         <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -735,8 +739,8 @@
     <!-- #region Footer -->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="foter-logo-social">
-          <div class="footer-logo-wrapper">
+        <div class="footer-media-wrapper">
+          <div class="foter-logo-social">
             <a class="footer-logo" href="./index.html"
               >Web<span class="footer-logo-white">Studio</span></a
             >

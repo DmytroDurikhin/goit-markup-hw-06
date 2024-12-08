@@ -75,6 +75,9 @@ input {
     margin: 0 auto;
     /* outline: 1px solid red; */
   }
+  .section {
+    padding: 96px 0;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -239,6 +242,10 @@ input {
     gap: 40px;
   }
   .header-contacts-link {
+    font-size: 16px;
+
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     display: block;
     padding: 24px 0;
   }
@@ -313,8 +320,15 @@ input {
 
   gap: 40px;
 }
+.mobile-menu-contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
 .mobile-menu-contacts-list {
-  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .mobile-menu-contacts-link {
@@ -356,7 +370,6 @@ input {
     width: 100%;
     margin: 0 auto;
     padding: 72px 0;
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -473,10 +486,6 @@ input {
   }
 }
 @media only screen and (min-width: 320px) {
-  .benefits-container {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
   .visually-hidden {
     position: absolute;
     width: 1px;
@@ -543,16 +552,10 @@ input {
   }
 }
 @media only screen and (min-width: 1158px) {
-  .benefits-container {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
   .benefits-list {
     align-items: baseline;
   }
-  .benefits-item {
-  }
+
   .benefits-icon {
     display: flex;
     align-items: center;
@@ -590,16 +593,11 @@ input {
 @media only screen and (min-width: 320px) {
   .team {
     background-color: #f4f4fd;
-  }
-  .team.section {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .team-container {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
+
   .team-title {
     color: #2e2f42;
     text-align: center;
@@ -686,11 +684,6 @@ input {
   }
 }
 @media only screen and (min-width: 1158px) {
-  .team-container {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
   .team-list {
     gap: 24px;
     flex-wrap: nowrap;
@@ -710,10 +703,6 @@ input {
   }
 }
 @media only screen and (min-width: 320px) {
-  .portfolio .container {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
   .portfolio-title {
     color: #2e2f42;
     text-align: center;
@@ -773,11 +762,6 @@ input {
   }
 }
 @media only screen and (min-width: 1158px) {
-  .portfolio .container {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
   .portfolio-list {
     flex-wrap: wrap;
     row-gap: 48px;
@@ -829,6 +813,7 @@ input {
 @media only screen and (min-width: 320px) {
   .footer {
     background-color: #2e2f42;
+    padding: 96px 0;
   }
 
   .footer-container {
@@ -838,15 +823,23 @@ input {
     gap: 72px;
     align-items: center;
     justify-content: center;
-    padding-top: 96px;
-    padding-bottom: 96px;
   }
-  .footer-logo-wrapper {
+
+  .footer-media-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 72px;
     align-items: center;
+    justify-content: center;
   }
+  .foter-logo-social {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
   .footer-logo {
     color: #4d5ae5;
     font-family: 'Raleway', sans-serif;
@@ -910,10 +903,10 @@ input {
   }
   .footer-form-label {
     max-width: 288px;
-    height: 40px;
   }
   .footer-input-email {
     width: 288px;
+    height: 40px;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
@@ -940,17 +933,25 @@ input {
   }
 }
 @media only screen and (min-width: 768px) {
+  .footer {
+    padding: 96px 0;
+  }
+
   .footer-container {
-    padding: 96px 108px;
     justify-content: flex-start;
+    padding: 0 108px;
+  }
+  .footer-media-wrapper {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 24px;
   }
   .foter-logo-social {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
-    align-items: start;
-    margin-bottom: auto;
+    display: block;
+  }
+  .footer-logo {
+    display: block;
+    margin-bottom: 16px;
   }
 
   .footer-logo-white {
@@ -960,6 +961,9 @@ input {
   }
   .footer-text {
     width: 264px;
+  }
+  .footer-media {
+    gap: 0;
   }
 
   .footer-text-media {
@@ -1022,6 +1026,7 @@ input {
 @media only screen and (min-width: 1158px) {
   .footer {
     display: block;
+    padding: 100px 0;
   }
 
   .footer-container {
@@ -1029,17 +1034,19 @@ input {
     align-items: baseline;
     flex-wrap: nowrap;
     gap: 0;
-    padding: 100px 16px;
+    padding: 0 15px;
+  }
+  .footer-media-wrapper {
+    gap: 120px;
+  }
+  .footer-media {
+    align-items: start;
   }
   .foter-logo-social {
     gap: 0;
   }
   .footer-logo-wrapper {
     margin-right: 120px;
-  }
-
-  .footer-media {
-    gap: 0;
   }
 
   .footer-subscribe-container {
